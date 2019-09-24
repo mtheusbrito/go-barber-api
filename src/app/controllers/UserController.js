@@ -71,7 +71,7 @@ class UserController {
 
         const { id, name, provider } = await user.update(req.body);
 
-        console.log(req.userId);
+        // console.log(req.userId);
         return res.json({
             id,
             name,
