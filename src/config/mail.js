@@ -1,14 +1,12 @@
-import { Session } from 'inspector';
-
 export default {
-    host: 'smtp.mailtrap.io',
-    port: 2525,
+    host: process.env.MAIL_HOST,
+    port: process.env.MAIL_PORT,
     secure: false,
     auth: {
-        user: '8c1e81a65eec3e',
-        pass: '0dbbb33c35a9c8',
+        user: process.env.MAIL_USER,
+        pass: process.env.MAIL_PASS,
     },
     default: {
-        from: 'Matheus Brito <noreply@gobarber.com>',
+        from: 'Matheus Brito - Equipe GoBarber <noreply@gobarber.com>',
     },
 };
